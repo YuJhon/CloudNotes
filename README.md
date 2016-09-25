@@ -1,15 +1,15 @@
-## CloudNotes v0.1
+# CloudNotes v0.1
 ### Private: 一个结合了 Angular, Ionic, NodeJS, MongoDB 的实训项目
 
 <br/>
 
-### 我的云笔记
+###我的云笔记
 这是一个使用 Ionic 制作的云笔记App, 以 Markdown 作为解析器，可以方便的使用 Markdown 语法进行记录笔记内容。
 (里面使用到了有道云的图标，向有道云致敬)
 
 <br/>
 
-### 使用到的技术：
+###使用到的技术：
     HTML, CSS, Javascript
     AngularJS
     Ionic
@@ -21,13 +21,15 @@
 
 2. 安装好后，先运行 MongoDB 的服务，再运行 NodeJS，最后运行 Ionic
 
-3. 在程序的 /node-server/model/Db 里对数据库连接的配置，默认是 **127.0.0.1:27017/cloudNotes**
+3. 需要引入 Npm 包, 在 /node-server/ 目录下**npm install** , 在 /CloudNotes/ 目录下 **npm install**
 
-4. 关于启动 MongoDB, 在 MongoDb目录下 命令行运行 **Mongod --config Mongodb.config** (根据你的配置情况而定)
+4. 在程序的 /node-server/model/Db 里对数据库连接的配置，默认是 **127.0.0.1:27017/cloudNotes**
 
-5. 关于启动 NodeJS , 在 /node-server/ 命令行运行 **Node app.js**
+5. 关于启动 MongoDB, 在 MongoDb目录下 命令行运行 **Mongod --config Mongodb.config** (根据你的配置情况而定)
 
-6. 关于启动 Ionic, 在 /CloudNotes/ 命令行运行 **ionic serve**
+6. 关于启动 NodeJS , 在 /node-server/ 命令行运行 **Node app.js**
+
+7. 关于启动 Ionic, 在 /CloudNotes/ 命令行运行 **ionic serve**
 
 <br/>
 
@@ -54,7 +56,7 @@
 <br/>
 
 ### 编译打包
-使用 Ionic 命令行， 进行编译打包成 Android App, Ios App.
+使用 Ionic 命令行， 进行编译打包成 Android App, Ios App
 
 ######以Ios为例子：
 
