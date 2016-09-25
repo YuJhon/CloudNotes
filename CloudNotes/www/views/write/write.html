@@ -1,0 +1,40 @@
+
+    <ion-modal-view>
+
+        <ion-header-bar class='bar-balanced' style='opacity: 0.8 !important;'>
+            <button class="button button-clear" ng-click="write.hide();NOTE.clear();">
+                <span class="icon ion-android-arrow-dropleft padding"></span>
+            </button>
+            <div class="title">
+                <button class="button" ng-click="NOTE.add();" style="margin-top: 4px;font-size: 17px;font-family: 'microsoft yahei';">
+                    <span class="icon ion-ionic"></span>
+                    <span style="font-size: 15px;"> 发布</span>
+                </button>
+            </div>
+            <button class="button button-clear" ng-click="see.show();NOTE.update();">
+                <span class="icon ion-eye padding"></span>
+            </button>
+        </ion-header-bar>
+
+        <ion-content class='has-header' style="height: 100%;">
+            <section class="write" style="height: 100%;">
+                <div class="list">
+                    <label class="item-input-inset" style="border-bottom: 1px solid #ddd;">
+                        <span class="input-label title" >标题</span>
+                        <input type="text" class="title" ng-model="newNote.title" placeholder="标题"/>
+                    </label>
+
+                    <div
+                        class="item write-content"
+                        contenteditable="true"
+                        id='content'
+                        >{{newNote.content}}</div>
+
+                    <div class="item">
+                        {{time | date : 'yyyy-MM-dd hh:mm:ss EEEE'}}
+                    </div>
+                </div>
+            </section>
+        </ion-content>
+
+    </ion-modal-view>

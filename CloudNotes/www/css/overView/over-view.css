@@ -1,0 +1,40 @@
+.slide-box {
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 100px;
+}
+.slide-box img {
+  margin: 0 auto;
+}
+.slide-box img + div {
+  font-size: 32px;
+  letter-spacing: 4px;
+  margin: 20px 0;
+}
+.slide-box .box-sign {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+.slide-box .box-sign .row {
+  max-width: 600px;
+  margin: 0 auto !important;
+}
+.slide-box .box-sign .btn {
+  font-family: 'consolas', "microsoft yahei" !important;
+  margin: 20px;
+  padding: 8px 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: rgba(0, 0, 0, 0.7);
+}
+.slide-box .box-sign .btn:active, .slide-box .box-sign .btn:focus, .slide-box .box-sign .btn:hover, .slide-box .box-sign .btn.active, .slide-box .box-sign .btn.activated {
+  color: rgba(255, 0, 0, 0.9);
+  background-color: white !important;
+}
+
+/*# sourceMappingURL=over-view.css.map */

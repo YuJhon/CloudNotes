@@ -1,0 +1,31 @@
+
+    <ion-modal-view>
+
+        <ion-header-bar class='bar-balanced' style='opacity: 0.8 !important;'>
+            <button class="button button-clear" ng-click="see.hide();">
+                <span class="icon ion-android-arrow-dropleft padding"></span>
+            </button>
+            <div class="title">
+                <button class="button" style="margin-top: 4px;font-size: 17px;font-family: 'microsoft yahei';">
+                    <span class="icon ion-ionic"></span>
+                    <span style="font-size: 15px;"> 预览</span>
+                </button>
+            </div>
+        </ion-header-bar>
+
+        <ion-content class='has-header' style="height: 100%;">
+            <section class="write" style="height: 100%;">
+                <div class="list">
+                    <label class="item-input-inset" style="border-bottom: 1px solid #ddd;">
+                        <h2 style="margin: 10px auto;color: rgba(0,0,0,0.75);">{{newNote.title}} </h2>
+                    </label>
+                    <div class="card" style="padding: 4px 8px;" markdown={{newNote.content}}></div>
+                    <div class="item">
+                        {{time | date : 'yyyy-MM-dd hh:mm EEEE'}}
+                    </div>
+                </div>
+            </section>
+        </ion-content>
+
+    </ion-modal-view>
+

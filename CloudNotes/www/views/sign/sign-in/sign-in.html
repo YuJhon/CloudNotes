@@ -1,0 +1,33 @@
+
+    <ion-view class='sign-in' ng-controller="Sign-in" view-title='zz'>
+
+        <section class="sign">
+            <div class="logo">
+                <img src="../../img/logo_tm.png"/>
+                <div>我的云笔记</div>
+            </div>
+
+            <div class="list">
+                <div class="item item-input">
+                    <input type="text" placeholder="账号或邮箱"/>
+                </div>
+                <div class="item item-input">
+                    <input type="password" placeholder="密码"/>
+                </div>
+                <div class="item" style="border: none;padding: 0 10px;">
+                    <label style="float: left;"><a>忘记密码</a></label>
+                    <label ui-sref='sign-up' style="float: right;"><a>注册</a></label>
+                </div>
+
+                <div class="btn">
+                    <button
+                        ng-click='start.go()'
+                        ui-sref='notes'
+                        >登录
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+    </ion-view>

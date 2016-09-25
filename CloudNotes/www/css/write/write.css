@@ -1,0 +1,126 @@
+.write, .edit {
+  background-color: white;
+  padding-bottom: 50px;
+}
+.write span.title, .edit span.title {
+  width: auto;
+  padding-right: 15px;
+}
+.write input.title, .edit input.title {
+  font-family: "consolas", "microsoft yahei";
+  width: 100%;
+  margin-right: 15px;
+  padding: 0 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.write .write-content, .edit .write-content {
+  font-family: "consolas", "microsoft yahei";
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  width: calc(100% - 15px);
+  min-height: 300px;
+  height: 100%;
+  margin: 0px auto;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #111;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-bottom: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.write .write-content:focus, .write .write-content:active, .edit .write-content:focus, .edit .write-content:active {
+  border-color: #11C1F3;
+  box-shadow: 0px 0px 1px #007AFF;
+}
+.write pre, .edit pre {
+  font-family: "consolas", "microsoft yahei";
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+  margin: 4px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.write pre code, .edit pre code {
+  width: calc(100% - 5px) !important;
+  display: block;
+  font-family: "consolas", "microsoft yahei";
+}
+.write code, .write kbd, .write pre, .write samp, .edit code, .edit kbd, .edit pre, .edit samp {
+  font-family: "consolas", "microsoft yahei";
+  font-weight: 500;
+  font-size: 13px;
+  color: #373737;
+}
+.write h1, .write h2, .write h3, .write h4, .write h5, .write h6, .write div, .write p, .write span, .write section, .write a, .write b, .write blockquote, .write ol, .write ul, .write li, .write table, .write td, .write tr, .edit h1, .edit h2, .edit h3, .edit h4, .edit h5, .edit h6, .edit div, .edit p, .edit span, .edit section, .edit a, .edit b, .edit blockquote, .edit ol, .edit ul, .edit li, .edit table, .edit td, .edit tr {
+  font-family: inherit;
+}
+.write h1 a, .write h2 a, .write h3 a, .write h4 a, .write h5 a, .write h6 a, .write div a, .write p a, .write span a, .write section a, .write a a, .write b a, .write blockquote a, .write ol a, .write ul a, .write li a, .write table a, .write td a, .write tr a, .edit h1 a, .edit h2 a, .edit h3 a, .edit h4 a, .edit h5 a, .edit h6 a, .edit div a, .edit p a, .edit span a, .edit section a, .edit a a, .edit b a, .edit blockquote a, .edit ol a, .edit ul a, .edit li a, .edit table a, .edit td a, .edit tr a {
+  font-family: inherit;
+  pointer-events: none !important;
+}
+.write blockquote, .edit blockquote {
+  margin: 0 0 10px;
+  padding: 3px 10px;
+  border-left: 5px solid rgba(255, 50, 0, 0.8);
+}
+.write blockquote p, .edit blockquote p {
+  font-size: 16px;
+}
+.write a, .edit a {
+  font-family: inherit;
+  pointer-events: none !important;
+}
+.write h1, .edit h1 {
+  font-size: 32px;
+  font-weight: normal;
+  color: #0b0b0b;
+  line-height: 1.65;
+}
+.write h2, .edit h2 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #0b0b0b;
+  line-height: 1.65;
+}
+.write h3, .edit h3 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #0b0b0b;
+  line-height: 1.65;
+}
+.write h4, .edit h4 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #0b0b0b;
+  line-height: 1.65;
+}
+.write h5, .edit h5 {
+  font-size: 13px;
+  font-weight: normal;
+  color: #0b0b0b;
+  line-height: 1.65;
+}
+.write h6, .edit h6 {
+  font-size: 11px;
+  font-weight: normal;
+  color: #0b0b0b;
+  line-height: 1.65;
+}
+
+/*# sourceMappingURL=write.css.map */

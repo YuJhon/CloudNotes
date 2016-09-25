@@ -1,0 +1,39 @@
+
+    <ion-view class='sign-up' ng-controller="Sign-up">
+
+        <section class="sign">
+            <div class="logo">
+                <img src="../../img/logo_tm.png"/>
+                <div>我的云笔记</div>
+            </div>
+
+            <div class="list">
+                <div class="item item-input">
+                    <input type="email" placeholder="邮箱"/>
+                </div>
+
+                <div class="item item-input">
+                    <input type="text" placeholder="账号"/>
+                </div>
+
+                <div class="item item-input">
+                    <input type="password" placeholder="密码"/>
+                </div>
+
+                <div class="item" style="border: none;padding: 0 10px;">
+                    <label style="float: left;">
+                        <a>忘记密码</a>
+                    </label>
+                    <label ui-sref='sign-in' style="float: right;">
+                        <a>登录</a>
+                    </label>
+                </div>
+
+                <div class="btn">
+                    <button ui-sref='sign-up-success'>注册</button>
+                </div>
+            </div>
+
+        </section>
+
+    </ion-view>

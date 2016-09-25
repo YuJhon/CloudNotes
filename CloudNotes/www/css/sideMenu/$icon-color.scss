@@ -1,0 +1,25 @@
+
+
+// icon 颜色
+$icon-color: (
+    green:  rgba(102,204,0,0.9),
+    red:    rgba(255,61,0,0.9),
+    blue:   rgba(102,153,255,0.9),
+    yellow: rgba(255,204,0,0.9),
+);
+@each $i, $value in $icon-color {
+    .icon-#{$i} {
+        color: $value;
+    }
+}
+
+$size: (x1: 1, x2: 2, x3: 3, x4: 4);
+@each $i, $value in $size {
+    .icon-#{$i} {
+        font-size: 100% + $value * 25%;
+    }
+}
+
+
+
+

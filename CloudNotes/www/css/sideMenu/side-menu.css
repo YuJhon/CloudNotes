@@ -1,0 +1,53 @@
+.icon-green {
+  color: rgba(102, 204, 0, 0.9);
+}
+
+.icon-red {
+  color: rgba(255, 61, 0, 0.9);
+}
+
+.icon-blue {
+  color: rgba(102, 153, 255, 0.9);
+}
+
+.icon-yellow {
+  color: rgba(255, 204, 0, 0.9);
+}
+
+.icon-x1 {
+  font-size: 125%;
+}
+
+.icon-x2 {
+  font-size: 150%;
+}
+
+.icon-x3 {
+  font-size: 175%;
+}
+
+.icon-x4 {
+  font-size: 200%;
+}
+
+.side-menu {
+  background-color: rgba(255, 100, 255, 0.01);
+}
+.side-menu .item {
+  background-color: inherit;
+  border: 1px solid #ddd;
+}
+
+.img {
+  width: 100%;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid red;
+}
+.img .logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=side-menu.css.map */

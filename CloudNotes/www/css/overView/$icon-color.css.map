@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAUI,WAAY;EACR,KAAK,EAAE,sBAAM;;;AADjB,SAAY;EACR,KAAK,EAAE,qBAAM;;;AADjB,UAAY;EACR,KAAK,EAAE,wBAAM;;;AADjB,YAAY;EACR,KAAK,EAAE,sBAAM;;;AAMjB,QAAY;EACR,SAAS,EAAE,IAAmB;;;AADlC,QAAY;EACR,SAAS,EAAE,IAAmB;;;AADlC,QAAY;EACR,SAAS,EAAE,IAAmB;;;AADlC,QAAY;EACR,SAAS,EAAE,IAAmB",
+"sources": ["$icon-color.scss"],
+"names": [],
+"file": "$icon-color.css"
+}

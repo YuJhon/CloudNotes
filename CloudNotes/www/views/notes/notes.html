@@ -1,0 +1,58 @@
+
+    <ion-side-menus>
+
+        <ion-side-menu-content ng-controller="Notes">
+            <ion-nav-bar class="bar-balanced bar-violet">
+                <ion-nav-buttons side='left'>
+                    <button class="button button-clear" menu-toggle="left">
+                        <span class="icon ion-navicon"></span>
+                    </button>
+                </ion-nav-buttons>
+                <ion-nav-buttons side='right'>
+                    <button class="button button-clear" ng-click='write.show();NOTE.init();'>
+                        <span class="icon ion-social-instagram"></span>
+                    </button>
+                </ion-nav-buttons>
+            </ion-nav-bar>
+
+            <!-- view -->
+            <ion-view view-title='云笔记'>
+                <ion-content class='has-header'>
+                <ion-refresher pulling-text="下拉刷新" refreshing-text='成功' on-refresh="doRefresh()"></ion-refresher>
+                    <ion-list>
+
+                        <ion-item ng-repeat="note in noteData" ng-click='edit.show();NOTE.getIndex($index);'>{{note.title}}
+                            <span style="float: right;">{{note.time | date : 'yyyy-MM-dd'}}</span>
+                            <ion-option-button class='item' ng-click="NOTE.del($index);">
+                                <span class="icon icon-red ion-android-delete padding"></span>删除
+                            </ion-option-button>
+                        </ion-item>
+
+                    </ion-list>
+                </ion-content>
+            </ion-view>
+        </ion-side-menu-content>
+
+        <ion-side-menu
+            side='left'
+            width='150'
+            is-enabled='true'
+            class='side-menu'
+            ng-controller="Menu"
+            >
+
+            <div class="img">
+                <img class="logo" src="img/logo_tm.png" />
+                <div>Lizhooh</div>
+            </div>
+
+            <ion-list>
+                <ion-item><i class="ion-heart padding icon-green icon-x1"></i>收藏</ion-item>
+                <ion-item><i class="ion-person padding icon-red icon-x1"></i>账号</ion-item>
+                <ion-item><i class="ion-gear-b padding icon-blue icon-x1"></i>设置</ion-item>
+                <ion-item><i class="ion-coffee padding icon-yellow icon-x1"></i>关于</ion-item>
+            </ion-list>
+        </ion-side-menu>
+
+    </ion-side-menus>
+

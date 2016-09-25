@@ -1,0 +1,91 @@
+.sign {
+  width: 100%;
+  height: 100%;
+}
+.sign .logo {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0 0 0;
+  font-size: 32px;
+  letter-spacing: 4px;
+  padding: 5px 0;
+}
+.sign .logo img {
+  margin: 5px auto;
+}
+.sign .logo img + div {
+  margin: 20px 0;
+}
+
+.sign-in, .sign-up {
+  font-family: Tahoma, Helvetica, 'consolas', "microsoft yahei", "sans-serif";
+}
+.sign-in .item, .sign-up .item {
+  margin: 10px auto !important;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 270px !important;
+}
+.sign-in .item > input, .sign-up .item > input {
+  font-family: inherit;
+  letter-spacing: 1px;
+}
+.sign-in .btn, .sign-up .btn {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.sign-in .btn > button, .sign-up .btn > button {
+  font-family: inherit;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  padding: 8px 20px;
+  width: 100%;
+  max-width: 220px;
+  margin: 15px auto 0 auto;
+  color: rgba(0, 0, 0, 0.7);
+}
+.sign-in .btn > button:focus, .sign-in .btn > button:hover, .sign-up .btn > button:focus, .sign-up .btn > button:hover {
+  color: rgba(255, 0, 0, 0.8);
+}
+
+.sign-up-success {
+  padding: 20px;
+  padding-top: 80px;
+  text-align: center;
+}
+.sign-up-success > i {
+  font-size: 64px;
+}
+.sign-up-success > i + div {
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin: 20px;
+}
+.sign-up-success .data {
+  font-family: Tahoma, Helvetica, 'consolas', "microsoft yahei", "sans-serif";
+  padding: 20px 0;
+}
+.sign-up-success .data .data-list {
+  display: inline-block;
+  text-align: left;
+  margin: 10px;
+}
+.sign-up-success .data .go .btn {
+  margin-top: 50px;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 8px 20px;
+  width: 200px;
+  border-radius: 5px;
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.7);
+}
+.sign-up-success .data .go .btn:focus, .sign-up-success .data .go .btn:hover {
+  color: rgba(255, 0, 0, 0.8);
+}
+
+/*# sourceMappingURL=sign.css.map */

@@ -1,0 +1,46 @@
+
+
+.slide-box {
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 100px;
+
+    img {
+        margin: 0 auto;
+
+        & + div {
+            font-size: 32px;
+            letter-spacing: 4px;
+            margin: 20px 0;
+        }
+    }
+
+    .box-sign {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        width: 100%;
+        margin: 0 auto;
+
+        .row {
+            max-width: 600px;
+            margin: 0 auto !important;
+        }
+
+        .btn {
+            font-family: 'consolas', "microsoft yahei" !important;
+            margin: 20px;
+            padding: 8px 20px;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            color: rgba(0, 0, 0, 0.7);
+
+            &:active, &:focus, &:hover, &.active, &.activated{
+                color: rgba(255, 0, 0, 0.9);
+                background-color: white !important;
+            }
+        }
+    }
+}
