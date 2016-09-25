@@ -54,7 +54,7 @@
 <br/>
 
 ### 编译打包
-使用 Ionic 命令行， 进行编译打包成 Android App, Ios App
+使用 Ionic 命令行， 进行编译打包成 Android App, Ios App.
 
 ######以Ios为例子：
 
