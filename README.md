@@ -3,13 +3,13 @@
 
 <br/>
 
-###我的云笔记
+### 我的云笔记
 这是一个使用 Ionic 制作的云笔记App, 以 Markdown 作为解析器，可以方便的使用 Markdown 语法进行记录笔记内容。
 (里面使用到了有道云的图标，向有道云致敬)
 
 <br/>
 
-###使用到的技术：
+### 使用到的技术：
     HTML, CSS, Javascript
     AngularJS
     Ionic
