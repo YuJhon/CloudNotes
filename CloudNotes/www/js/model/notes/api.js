@@ -135,7 +135,7 @@
          * @param{Number} userId
          * @param{Boolean} star
          */
-        .factory('starNote', function($http) {
+        .factory('starNote', function($http, $ionicLoading) {
             return function(data, callback) {
 
                 console.log(data);
@@ -161,3 +161,57 @@
             }
         })
 
+        /**
+         * 检验
+         * @param{String} name
+         * @param{String} value
+         */
+        .factory('check', function($http, $ionicLoading) {
+            return function(data, callback) {
+
+                $http
+                    .post('http://127.0.0.1:8888/users/check', data)
+                    .success(function(result) {
+                        //
+                        if(typeof callback === 'function') {
+                            callback(result);
+                        }
+                    })
+                    .error(function(error) {
+                        $ionicLoading.show({
+                            template: '检查失败',
+                            duration: 3000,
+                        });
+                    })
+                    .finally(function() {
+                        //
+                    })
+                ;
+            }
+        })
+
+        .factory('addUser', function($http, $ionicLoading) {
+            return function(data, callback) {
+
+                $http
+                    .post('http://127.0.0.1:8888/users/sign-up', data)
+                    .success(function(result) {
+                        //
+                        if(typeof callback === 'function') {
+                            callback(result);
+                        }
+                    })
+                    .error(function(error) {
+                        $ionicLoading.show({
+                            template: '添加失败',
+                            duration: 3000,
+                        });
+                    })
+                    .finally(function() {
+                        //
+                    })
+                ;
+            }
+        })
+
+    ;

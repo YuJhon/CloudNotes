@@ -1,5 +1,5 @@
 
-    <ion-view>
+    <ion-view ng-controller="SignUp">
 
         <ion-content has-bouncing='true'>
 
@@ -7,14 +7,14 @@
                 <i class="ion-checkmark icon-red"></i>
                 <div>注册成功</div>
                 <div class="data">
-                    <div class="title">你的注册信息</div>
+                    <!--<div class="title">你的注册信息</div>
                     <div class="data-list">
-                        <div class="accout">账号：<span>Lizhooh</span></div>
-                        <div class="password">密码：<span>123456789</span></div>
-                        <div class="email">邮箱：<span>123456@qq.com</span></div>
-                    </div>
+                        <div class="accout">账号：<span>{{ user.account }}</span></div>
+                        <div class="password">密码：<span>{{ user.password }}</span></div>
+                        <div class="email">邮箱：<span>{{ user.email }}</span></div>
+                    </div>-->
                     <div class="go">
-                        <button class="btn" ui-sref='sign-in'>立即登录</button>
+                        <button class="btn"  ui-sref='sign-in'>立即登录</button>
                     </div>
                 </div>
             </section>

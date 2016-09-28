@@ -1,8 +1,8 @@
 
     var express = require('express'),
-        mongo   = require('./../model/Db/notes'),
+        mongo   = require('./../model/Db/db'),
         Db      = mongo.db(),
-        Select  = mongo.model(),
+        Select  = mongo.model('notes', 'note'),
         router  = express.Router();
 
 

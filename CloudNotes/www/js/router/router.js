@@ -53,14 +53,19 @@
                 .state('sign-up', {
                     url: '/sign-up',
                     templateUrl: 'views/sign/sign-up/sign-up.html',
+                    controller: 'SignUp',
                 })
 
                 .state('sign-up-success', {
                     url: '/sign-up/sucess',
                     templateUrl: 'views/sign/sign-up/sign-up-success.html',
+                    controller: 'SignUp',
                 })
             ;
 
+            /**
+             * 是否是第一次打开
+             */
             if(Store.get('start')) {
                 $urlRouterProvider.otherwise('/sign-in');
             }
