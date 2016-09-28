@@ -1,5 +1,12 @@
 'use strict';
 
+    /**
+     * 已激活的账号信息
+     * @global 全局变量
+     */
+    var userId   = '';
+    var userTime = '';
+
     var app = angular.module('App', ['ionic']);
 
     app
@@ -24,9 +31,9 @@
             };
         })
 
-        .controller('Menu', ['$scope',
-            function($scope) {
-
+        .controller('Menu', ['$scope', '$rootScope',
+            function($scope, $rootScope) {
+                $rootScope.userId = userId;
             }
         ])
     ;

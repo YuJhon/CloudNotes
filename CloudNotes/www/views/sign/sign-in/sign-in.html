@@ -1,5 +1,5 @@
 
-    <ion-view class='sign-in' ng-controller="Sign-in" view-title=''>
+    <ion-view class='sign-in' ng-controller="SignIn">
 
         <section class="sign">
             <div class="logo">
@@ -9,10 +9,10 @@
 
             <div class="list">
                 <div class="item item-input">
-                    <input type="text" placeholder="账号或邮箱"/>
+                    <input type="text" ng-model="user.account" placeholder="账号"/>
                 </div>
                 <div class="item item-input">
-                    <input type="password" placeholder="密码"/>
+                    <input type="password" ng-model="user.password" placeholder="密码"/>
                 </div>
                 <div class="item" style="border: none;padding: 0 10px;">
                     <label style="float: left;"><a>忘记密码</a></label>
@@ -20,9 +20,9 @@
                 </div>
 
                 <div class="btn">
+                        <!--ui-sref='notes'-->
                     <button
-                        ng-click='start.go()'
-                        ui-sref='notes'
+                        ng-click="login()"
                         >登录
                     </button>
                 </div>

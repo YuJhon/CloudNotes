@@ -31,10 +31,10 @@
 
             var user = {
                     account:    post.account,
-                    password:   post.password,
+                    password:   md5(post.password),
                 };
 
-            Select.find(user, {
+            Select.findOne(user, {
                 _id: 0,
                 account: 1,
             },
@@ -48,20 +48,23 @@
 
                 console.log(JSON.stringify(result, null, 4));
 
-                var account = result.account;
+                if(result) {
+                    var account = result.account;
 
-                /**
-                 * 账号存在
-                 * 返回 账号，登录时间
-                 */
-                if(account && typeof (account - 0) === 'number') {
-                    response.status(200).jsonp({
-                        status:     true,
-                        account:    result.account,
-                        signTime:   new Date().getTime(),
-                    });
-                    return;
+                    /**
+                     * 账号存在
+                     * 返回 账号，登录时间
+                     */
+                    if(account) {
+                        response.status(200).jsonp({
+                            status:     true,
+                            account:    result.account,
+                            signTime:   new Date().getTime(),
+                        });
+                        return;
+                    }
                 }
+
                 /**
                  * 用户不存在
                  * 返回 false

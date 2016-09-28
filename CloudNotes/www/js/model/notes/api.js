@@ -214,4 +214,31 @@
             }
         })
 
+        /**
+         * 登录
+         */
+        .factory('login', function($http, $ionicLoading) {
+            return function(data, callback) {
+
+                $http
+                    .post('http://127.0.0.1:8888/users/sign-in', data)
+                    .success(function(result) {
+                        //
+                        if(typeof callback === 'function') {
+                            callback(result);
+                        }
+                    })
+                    .error(function(error) {
+                        $ionicLoading.show({
+                            template: '登录失败',
+                            duration: 3000,
+                        });
+                    })
+                    .finally(function() {
+                        //
+                    })
+                ;
+            }
+        })
+
     ;

@@ -13,7 +13,7 @@
         content: String,        /* 内容 */
         star:  Boolean,         /* 收藏状态 */
         time: String,           /* 最新发布/修改时间 */
-        userId: Number,         /* 用户的id */
+        userId: String,         /* 用户的账号 */
     };
 
     var user = {

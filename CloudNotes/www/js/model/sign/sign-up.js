@@ -5,11 +5,18 @@
     app
         .controller('SignUp', ['$scope', '$$', '$http', '$ionicLoading', '$location', 'check', 'addUser',
             function($scope, $$, $http, $ionicLoading, $location, check, addUser) {
+
+                /**
+                 * 数据体
+                 */
                 $scope.user = {
                     email: '',
                     account: '',
                     password: '',
 
+                    /**
+                     * 增加用户
+                     */
                     add: function() {
 
                         console.log(this);

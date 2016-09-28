@@ -21,11 +21,12 @@
             console.log(JSON.stringify(post, null, 4));
 
             Select
-                .find({ userId: post.userId - 0 }, { userId: 0 })
+                .find({ userId: post.userId }, { userId: 0 })
                 .sort({ time: -1 })
                 .skip(len * (post.index - 1))
                 .limit(len)
                 .exec(function(error, result) {
+                    console.log(result);
                     if(error) {
                         response.status(500).jsonp(error);
                         return;
@@ -64,6 +65,7 @@
             /* 增加 */
             Select.create(data, function(error, result) {
                 if(error) {
+                    console.log(JSON.stringify(error, null, 4));
                     delete error.message;
                     response.status(500).jsonp(JSON.stringify(error, null, 4));
                     return;
@@ -121,7 +123,7 @@
             /* 更新 */
             Select.update({
                 _id:    post._id - 0,
-                userId: post.userId - 0,
+                userId: post.userId,
             }, data,
             function(error, result) {
                 if(error) {
@@ -150,7 +152,7 @@
 
             Select.update({
                 _id:    post._id - 0,
-                userId: post.userId - 0,
+                userId: post.userId,
             }, data,
             function(error, result) {
                 if(error) {

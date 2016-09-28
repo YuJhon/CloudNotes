@@ -3,6 +3,11 @@
     var app = angular.module('App');
 
     app
+        /**
+         * 生成一个 Modal
+         * @param{String} path 模版路径
+         * @param{Object} option 配置项
+         */
         .factory('Modal', function($ionicModal) {
             return function Modal(path, option) {
 
@@ -53,6 +58,9 @@
             };
         })
 
+        /**
+         * 选择器引擎
+         */
         .factory('$$', function() {
             return function(select, content) {
                 content = content || document;
@@ -86,6 +94,11 @@
             };
         })
 
+        /**
+         * 获取笔记列表
+         * @param{Number} index 页码
+         * @param{String} userId 用户账号
+         */
         .factory('NoteData', function($http) {
 
             return {

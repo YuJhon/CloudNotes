@@ -10,6 +10,9 @@
             $ionicConfigProvider.backButton.previousTitleText(false);
             $ionicConfigProvider.backButton.icon(false);
 
+            /**
+             * 本地存储
+             */
             var Store = {
                 add: function(name, value) {
                     localStorage[name] = value;
@@ -43,11 +46,13 @@
                 .state('notes', {
                     url: '/notes',
                     templateUrl: 'views/notes/notes.html',
+                    controller: 'Notes',
                 })
 
                 .state('sign-in', {
                     url: '/sign-in',
                     templateUrl: 'views/sign/sign-in/sign-in.html',
+                    controller: 'SignIn',
                 })
 
                 .state('sign-up', {

@@ -8,6 +8,9 @@
 
             return {
                 scope: {
+                    /**
+                     * 单向绑定
+                     */
                     markdown: '@'
                 },
 

@@ -12,8 +12,6 @@
         return result;
     };
 
-    var userId = 321;
-
     var app = angular.module('App');
 
     app
