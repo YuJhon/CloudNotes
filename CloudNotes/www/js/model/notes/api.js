@@ -37,7 +37,7 @@
                     noBackdrop: true
                 });
 
-                console.log(data);
+//              console.log(data);
 
                 $http
                     .post('http://127.0.0.1:8888/notes/add', data)
@@ -71,7 +71,7 @@
                     noBackdrop: true,
                 });
 
-                console.log(data);
+//              console.log(data);
 
                 $http
                     .post('http://127.0.0.1:8888/notes/del', data)
@@ -106,7 +106,7 @@
                     noBackdrop: true,
                 });
 
-                console.log(data);
+//              console.log(data);
 
                 $http
                     .post('http://127.0.0.1:8888/notes/save', data)
@@ -138,7 +138,7 @@
         .factory('starNote', function($http, $ionicLoading) {
             return function(data, callback) {
 
-                console.log(data);
+//              console.log(data);
 
                 $http
                     .post('http://127.0.0.1:8888/notes/star', data)

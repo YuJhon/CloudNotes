@@ -19,7 +19,7 @@
                      */
                     add: function() {
 
-                        console.log(this);
+//                      console.log(this);
 
                         if(!this.account || !this.password || this.email == '') {
                             $ionicLoading.show({
@@ -59,10 +59,10 @@
                                                 password:   $scope.user.password,
                                             };
 
-                                        console.log(user);
+//                                      console.log(user);
 
                                         addUser(user, function(result) {
-                                            console.log(result);
+//                                          console.log(result);
                                             $scope.user.email    = '';
                                             $scope.user.account  = '';
                                             $scope.user.password = '';

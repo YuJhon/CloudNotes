@@ -16,7 +16,7 @@
 
                 $scope.login = function() {
 
-                    console.log($scope.user);
+//                  console.log($scope.user);
 
                     if(!$scope.user.account || !$scope.user.password) {
                         $ionicLoading.show({
@@ -28,7 +28,7 @@
 
                     login($scope.user, function(result) {
 
-                        console.log(result);
+//                      console.log(result);
 
                         if(!result) return;
 

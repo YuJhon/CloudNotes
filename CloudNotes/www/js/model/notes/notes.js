@@ -85,14 +85,14 @@
                         // 临时结点
                         $scope.note = deepCopy($scope.noteData[index]);
 
-                        console.log($scope.note.star);
+//                      console.log($scope.note.star);
 
                         $scope.note.setStar = function() {
                             // post
                             $this.star($scope.note, function() {
                                 $scope.note.star = $scope.noteData[index].star = !$scope.note.star;
 
-                                console.log($scope.note.star);
+//                              console.log($scope.note.star);
 
                             });
                         };
@@ -168,7 +168,7 @@
                                 userId: userId,
                             };
 
-                        console.log($scope.noteData[index]);
+//                      console.log($scope.noteData[index]);
 
                         delNote(data, function() {
                             $scope.noteData.splice(index, 1);
