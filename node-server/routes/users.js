@@ -12,7 +12,8 @@
 
         md5 = function(str) {
             var salt = 'zxaSAjk3123';
-            return crypto.createHash('md5').update(str + salt).digest('hex');
+            return crypto.createHash('md5')
+                .update(str + salt).digest('hex');
         };
 
     /* GET users listing. */
@@ -42,7 +43,9 @@
                 if(error) {
                     delete error.message;
                     console.log(JSON.stringify(error, null, 4));
-                    response.status(500).jsonp(JSON.stringify(error, null, 4));
+                    response.status(500).jsonp(
+                        JSON.stringify(error, null, 4)
+                    );
                     return;
                 }
 
@@ -105,7 +108,9 @@
                 if(error) {
                     delete error.message;
                     console.log(JSON.stringify(error, null, 4));
-                    response.status(500).jsonp(JSON.stringify(error, null, 4));
+                    response.status(500).jsonp(
+                        JSON.stringify(error, null, 4)
+                    );
                     return;
                 }
 

@@ -6,11 +6,9 @@
         cookieParser = require('cookie-parser'),
         bodyParser   = require('body-parser');
 
-
     var routes = require('./routes/index'),
         users  = require('./routes/users'),
         notes  = require('./routes/notes');
-
 
     var app = express();
 
@@ -94,6 +92,6 @@
         console.log('Run server: 127.0.0.1:8888');
     });
 
-    //module.exports = app;
+    module.exports = app;
 
 

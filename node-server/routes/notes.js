@@ -5,7 +5,6 @@
         Select  = mongo.model('notes', 'note'),
         router  = express.Router();
 
-
     router
 
         /**
@@ -67,7 +66,9 @@
                 if(error) {
                     console.log(JSON.stringify(error, null, 4));
                     delete error.message;
-                    response.status(500).jsonp(JSON.stringify(error, null, 4));
+                    response.status(500).jsonp(
+                        JSON.stringify(error, null, 4)
+                    );
                     return;
                 }
 
@@ -95,7 +96,9 @@
             Select.remove(data, function(error, result) {
                 if(error) {
                     delete error.message;
-                    response.status(500).jsonp(JSON.stringify(error, null, 4));
+                    response.status(500).jsonp(
+                        JSON.stringify(error, null, 4)
+                    );
                     console.log();
                     return;
                 }
@@ -163,7 +166,6 @@
                 response.status(200).jsonp(result);
             });
         })
-
     ;
 
     module.exports = router;

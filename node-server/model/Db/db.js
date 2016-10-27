@@ -8,21 +8,21 @@
         dbs  = null;
 
     var note = {
-        _id: Number,            /* id */
-        title: String,          /* 标题 */
-        content: String,        /* 内容 */
-        star:  Boolean,         /* 收藏状态 */
-        time: String,           /* 最新发布/修改时间 */
-        userId: String,         /* 用户的账号 */
+        _id     : Number,        /* id */
+        title   : String,        /* 标题 */
+        content : String,        /* 内容 */
+        star    : Boolean,      /* 收藏状态 */
+        time    : String,        /* 最新发布/修改时间 */
+        userId  : String,        /* 用户的账号 */
     };
 
     var user = {
-        _id: Number,            /* id */
-        account: String,        /* 账号 */
-        password: String,       /* 密码 */
-        email: String,         /* 邮箱 */
-        time: String,           /* 创建时间  */
-    }
+        _id     : Number,        /* id */
+        account : String,        /* 账号 */
+        password: String,        /* 密码 */
+        email   : String,        /* 邮箱 */
+        time    : String,        /* 创建时间  */
+    };
 
     module.exports = {
         db: function() {
